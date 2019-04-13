@@ -36,16 +36,17 @@ header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
             <li><img src="img/logo.jpg" width="120px" height="90px"></li>
             <li><a href="#">CLASS ROOM</a></li>
             <li><a href="exam.php">EXAM ROOM</a></li>
-            <li><a href="#">NOTES </a></li>
-            <li><a href="../../tutorial_index.php">TUTORIALS</a></li>
+            <li><a href="uploadNotes.php">NOTES </a></li>
+            <li><a href="/tutorial_index.php">TUTORIALS</a></li>
             <li><a href="?action=logout">LOG OUT </a></li>
 
             <?php }else {
             ?>
             <li><img src="img/logo.jpg" width="130px" height="100px"></li>
-            <li><a href="../../tutorial_index.php">TUTORIALS</a></li>
+            <li><a href="/tutorial_index.php">TUTORIALS</a></li>
             <li><a href="index.php">LOG IN</a></li>
             <li><a href="#">REGISTER</a></li>
+            <li><a href="uploadNotes.php">NOTES </a></li>
 
             <?php } ?>
         </ul>
@@ -62,8 +63,8 @@ header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
     }
     ?>
 
-		<section class="maincontent">
-		<div class="menu">
+	<section class="maincontent">
+	  <div class="menu">
 		<ul>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="users.php">Manage User</a></li>
