@@ -5,7 +5,7 @@
 
 
 	<div class="segment" style="margin-right:30px;">
-		<img src="img/regi.png"/>
+		<img src="img/pro.png"/>
 	</div>
 
 

@@ -13,10 +13,10 @@ $total    = $exm->getTotalRows();
 ?>
 
     <div class="viva_main">
-        <h1 style="color: blue;">Online Exam System - Viva Board</h1>
-        <p style="text-align: center">Congratulation! You are selected for the viva board.</p>
+        <h1 style="color: blue;">Submit your Problem</h1>
+        
         <div style="text-align: center;">
-            <strong style="color: #444444">Final Score:
+            <strong style="color: #444444"><br><br><br>
                 <?php
                 if(isset($_SESSION['score'])){
                     echo $_SESSION['score'];
@@ -45,12 +45,12 @@ $total    = $exm->getTotalRows();
                         <td><input name="email" id="email" type="text" required="" placeholder="Enter Email"></td>
                     </tr>
                     <tr>
-                        <td>Facebook ID:</td>
-                        <td><input name="facebook" type="text" id="facebook" required="" placeholder="Like: fb.com/zakaria5729"></td>
+                        <td>Catagory:</td>
+                        <td><input name="facebook" type="text" id="facebook" required="" placeholder="science/arts/engineering"></td>
                     </tr>
                     <tr>
-                        <td>Skype ID:</td>
-                        <td><input name="skype" type="text" id="skype" placeholder="Enter Skype ID"></td>
+                        <td>Description:</td>
+                        <td><TEXTAREA name="skype" type="text" id="skype"></TEXTAREA></td>
                     </tr>
                     <tr>
                     <tr>
@@ -60,11 +60,6 @@ $total    = $exm->getTotalRows();
                     </tr>
                 </table>
             </form>
-        </div>
-
-        <div style="text-align: center; padding-top: 45px" class="viva_starttest">
-            <a style="border-color: green;" href="viewAns.php">View Answer Sheet</a>
-            <a style="border-color: green;" href="start_test.php">Start Test Again.!</a>
         </div>
 
 
