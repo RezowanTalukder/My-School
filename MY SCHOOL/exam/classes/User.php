@@ -189,9 +189,8 @@ class User{
             exit();
         }
         
-        echo "fuck me pls";
 
-        $query = "INSERT INTO tbl_request(id, name, email, catagory, description) VALUES('1', $name', '$email', '$catagory', '$description')";
+        $query = "INSERT INTO tbl_request(name, email, catagory, description) VALUES('$name', '$email', '$catagory', '$description')";
         $insert_row = $this->db->insert($query);
 
         if($insert_row){

@@ -57,7 +57,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'logout'){
             <li><img src="img/logo.jpg" width="120px" height="90px"></li>
             <li><a href="#">CLASS ROOM</a></li>
             <li><a href="exam.php">EXAM ROOM</a></li>
-            <li><a href="#">NOTES </a></li>
+            <li><a href="notes.php">NOTES</a></li>
             <li><a href="tutorial_index.php">TUTORIALS</a></li>
             <li><a href="?action=logout">LOG OUT </a></li>
 
