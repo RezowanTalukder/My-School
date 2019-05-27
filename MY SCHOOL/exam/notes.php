@@ -28,7 +28,7 @@ $query = $db->query("SELECT * FROM tbl_note ORDER BY uploaded_on DESC");
 			    <td><?php echo $id; ?> </td>
 			    <td><?php echo $URL; ?> </td>
 			    <td><?php echo $date; ?> </td>
-			    <td><button class="button_class" style="padding: 5px"><a href="notes.php?id=<?php echo $row['id'] ?>">Download</a></button></td>
+			    <td><button class="button_class" style="padding: 5px"><a href="teacher/uploadedNotes/<?php echo $row['file_name'] ?>" target="_blank">Read</a></button></td>
 
 			</tr>
 			<?php }

@@ -10,14 +10,14 @@ Session::checkSession();
 		<img src="img/online_exam.png"/>
 	</div>
 	<div class="segment">
-	<h2>List of Exams</h2>
+	<h2>Exam Rule</h2>
 
 
-        <p style="text-align: justify; display: block; font-size: 16px; color: #444444">Online examination is conducting a test online to measure the knowledge of the participants on a given topic.
-            In the olden days everybody had to gather in a classroom at the same time to take an exam.
-        For Online exam, you need a browser and the internet connection. It is a web based online examination solution
-            for students, organizations, coaching institutes which can be customized as per the requirements.This management system provides
-            simple and intuitive interface, a hassle-free flow from one test process to another.</p>
+        <p style="text-align: justify; display: block; font-size: 16px; color: #444444">Communicating or trying to communicate in any way with fellow students<br>
+- Attempting to view examination papers of others<br>
+- Using unapproved examination materials, such as: calculators, mobile phones, formulas<br>
+- Possessing “cheat sheets”<br>
+- Writing on desk, body parts, dress, scale or in any other materials</p>
 
 
 	<ul style="padding-top: 20px; padding-left: 50px;">
