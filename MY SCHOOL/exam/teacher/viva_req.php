@@ -11,11 +11,11 @@ $usr = new User();
         <div class="manageuser">
             <table class="tblone">
                 <tr>
-                    <th>No</th>
+                    <th>Roll</th>
                     <th>Name</th>
                     <th>Email</th>
-                    <th>Facebook ID</th>
-                    <th>Skype ID</th>
+                    <th>Marks</th>
+                    <th>Status</th>
                 </tr>
 
                 <?php
