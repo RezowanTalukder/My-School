@@ -9,6 +9,22 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $password = $_POST['password'];
     $email = $_POST['email'];
 
-    $userReg = $usr->userRegistration($name, $username, $password, $email);
-}
+
+
+    $uppercase = preg_match('@[A-Z]@', $password);
+	$lowercase = preg_match('@[a-z]@', $password);
+	$number    = preg_match('@[0-9]@', $password);
+
+
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		
+		$userReg = $usr->userRegistration($name, $username, $password, $email);
+	}
+
+    else{
+		echo "invalid email !" ;
+    }
+
+    
+	}
 ?>

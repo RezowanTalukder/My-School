@@ -55,7 +55,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'logout'){
             if($login == true){
             ?>
             <li><img src="img/logo.jpg" width="120px" height="90px"></li>
-            <li><a href="#">CLASS ROOM</a></li>
+            <li><a href="class.php">CLASS ROOM</a></li>
             <li><a href="exam.php">EXAM ROOM</a></li>
             <li><a href="notes.php">NOTES</a></li>
             <li><a href="tutorial_index.php">TUTORIALS</a></li>
@@ -66,7 +66,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'logout'){
             <li><img src="img/logo.jpg" width="130px" height="100px"></li>
             <li><a href="tutorial_index.php">TUTORIALS</a></li>
             <li><a href="index.php">STUDENT LOGIN</a></li>      
-            <li><a href="admin/index.php">TEACHER LOGIN</a></li>
+            <li><a href="teacher\index.php">TEACHER LOGIN</a></li>
             <li><a href="register.php">REGISTER</a></li>
 
             <?php } ?>
@@ -83,7 +83,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'logout'){
             if($login == true){
             ?>
 			<li><a href="profile.php">Profile</a></li>
-			<li><a href="exam.php">List of Exams</a></li>
+			
 			
 
             <?php }else {

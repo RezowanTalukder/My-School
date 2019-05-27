@@ -36,7 +36,7 @@ class User{
                 echo "<span style='color: red'>Email Address Already Exist!</span>";
                 exit();
             }else{
-                $password = mysqli_real_escape_string($this->db->link, md5($password));
+                $password = mysqli_real_escape_string($this->db->link, ($password));
                 $query = "INSERT INTO tbl_user(name, username, password, email) VALUES('$name', '$username', '$password', '$email')";
                 $insert_row = $this->db->insert($query);
                 if($insert_row){
@@ -103,7 +103,7 @@ class User{
         $name     = mysqli_real_escape_string($this->db->link, $name);
         $username = mysqli_real_escape_string($this->db->link, $username);
         $email    = mysqli_real_escape_string($this->db->link, $email);
-        $password    = mysqli_real_escape_string($this->db->link, md5($password));
+        $password    = mysqli_real_escape_string($this->db->link, ($password));
 
         $query = "UPDATE tbl_user SET name='$name', username='$username', email='$email', password='$password' where userId = '$userId'";
         $updated_row = $this->db->update($query);

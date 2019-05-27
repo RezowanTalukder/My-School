@@ -57,14 +57,14 @@ if(isset($_GET['action']) && $_GET['action'] == 'logout'){
             <li><img src="img/logo.jpg" width="120px" height="90px"></li>
             <li><a href="profile.php">CLASS ROOM</a></li>
             <li><a href="exam.php">EXAM ROOM</a></li>
-            <li><a href="#">NOTES </a></li>
-            <li><a href="#">TUTORIALS</a></li>
+            <li><a href="notes.php">NOTES </a></li>
+            <li><a href="tutorial_index.php">TUTORIALS</a></li>
             <li><a href="?action=logout">LOG OUT </a></li>
 
             <?php }else {
             ?>
             <li><img src="img/logo.jpg" width="130px" height="100px"></li>
-            <li><a href="#">TUTORIALS</a></li>
+            <li><a href="tutorial_index.php">TUTORIALS</a></li>
             <li><a href="index.php">LOG IN</a></li>
             <li><a href="register.php">REGISTER</a></li>
 
@@ -78,10 +78,10 @@ if(isset($_GET['action']) && $_GET['action'] == 'logout'){
 		<div class="menu">
     		<ul>
 
-    			<li><a href="#">Science</a></li>
-    			<li><a href="#">Mathematics</a></li>
-    			<li><a href="#">Engineering</a></li>
-                <li><a href="#">Arts</a></li>
+    			<li><a href="science.php">Science</a></li>
+    			<li><a href="math.php">Mathematics</a></li>
+    			<li><a href="engineering.php">Engineering</a></li>
+                <li><a href="arts.php">Arts</a></li>
                 <li><a href="#">Business</a></li>
                 <li><a href="#">Others</a></li>         
 

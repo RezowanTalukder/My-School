@@ -5,7 +5,7 @@ $usr = new User();
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $email = $_POST['email'];
-    $password = md5($_POST['password']);
+    $password = ($_POST['password']);
 
     $userLog = $usr->userLogin($email, $password);
 }

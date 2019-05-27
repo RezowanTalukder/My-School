@@ -77,9 +77,9 @@ CREATE TABLE `tbl_user` (
 
 
 INSERT INTO `tbl_user` (`userId`, `name`, `username`, `password`, `email`, `status`) VALUES
-(1, 'Zakaria Hossain', 'Zakaria', '202cb962ac59075b964b07152d234b70', 'zakaria@gmail.com', 0),
-(3, 'Hasib Hasan', 'hasib', '202cb962ac59075b964b07152d234b70', 'hasib@gmail.com', 0),
-(4, 'James Ahmed', 'James', '202cb962ac59075b964b07152d234b70', 'jamesmahmud@gmail.com', 0);
+(1, 'rez1', 'rez1', '202cb962ac59075b964b07152d234b70', 'zakaria@gmail.com', 0),
+(3, 'Hasan', 'hasib', '202cb962ac59075b964b07152d234b70', 'hasib@gmail.com', 0),
+(4, 'James', 'James', '202cb962ac59075b964b07152d234b70', 'jamesmahmud@gmail.com', 0);
 
 
 
@@ -97,15 +97,9 @@ CREATE TABLE `tbl_viva` (
 --
 
 INSERT INTO `tbl_viva` (`id`, `name`, `email`, `facebook`, `skype`) VALUES
-(1, 'Zakaria ', 'zakariahossain143@gmail.com', 'facebook.com/zakaria5729', 'skype.com/593');
+(1, 'rez1 ', 'rez1@gmail.com', 'facebook.com/rez1', 'skype.com/593');
 
---
--- Indexes for dumped tables
---
 
---
--- Indexes for table `tbl_admin`
---
 ALTER TABLE `tbl_admin`
   ADD PRIMARY KEY (`adminId`);
 
