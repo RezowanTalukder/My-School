@@ -1,11 +1,11 @@
 <?php include 'inc/header.php'; ?>
 <div class="main">
-<h1>Student Registration</h1>
+<h1>Teacher Registration</h1>
 	<div class="segment" style="margin-right:30px;">
 		<img src="img/regi.png"/>
 	</div>
 	<div class="segment">
-	<form action="send_mail.php" method="post">
+	<form action="" method="post">
 		<table style="padding-left: 60px; padding-top: 25px">
 		<tr>
            <td>Name:</td>
