@@ -40,9 +40,9 @@ header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
             ?>
             <li><img src="img/logo.jpg" width="130px" height="100px"></li>
             <li><a href="http://localhost/spl/tutorial_index.php">TUTORIALS</a></li>
-            <li><a href="../index.php">STUDENT LOGIN</a></li>      
+            <li><a href="http://localhost/spl/index.php">STUDENT LOGIN</a></li>      
             <li><a href="index.php">TEACHER LOGIN</a></li>
-            <li><a href="register.php">REGISTER</a></li>
+            <li><a href="#">REGISTER</a></li>
             <li><a href="uploadNotes.php">NOTES </a></li>
 
             <?php } ?>
