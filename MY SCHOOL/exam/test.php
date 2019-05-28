@@ -18,7 +18,51 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 }
 ?>
 
+
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="TimeCircles/TimeCircles.js"></script>
+<link rel="stylesheet" type="text/css" href="TimeCircles/TimeCircles.css">
+<?php
+    $connection = mysqli_connect("localhost", "root", "", "db_exam");
+    
+    $sql = "SELECT * FROM tbl_examTime WHERE id=( SELECT MAX(id) FROM tbl_examTime )";
+    $result = mysqli_query($connection, $sql);
+    $row = mysqli_fetch_object($result);
+?>
+
+
+
+<div data-date="<?php echo $row->endTime; ?>" id="count-down"></div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#count-down").TimeCircles();
+    });
+</script>
+
+
+
 <div class="main">
+
+
+
+
+	<?php
+	/*
+		$t = date('Y-m-d H:i:s');
+
+		if ($t > $row->requiredDate) {
+
+		
+		}else{
+			?>
+			<div data-date="<?php echo $row->requiredDate; ?>" id="count-down"></div>
+		<?php
+		}
+		*/
+	?>
+
+
 <h1>Question <?php echo $question['quesNo']; ?> of <?php echo $total;?> </h1>
 	<div class="test">
 		<form method="post" action="">
